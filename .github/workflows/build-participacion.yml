@@ -1,0 +1,23 @@
+name: Build plataforma de participación
+on:
+  push:
+    branches: ["participacion/colombia-construye-futuro"]
+    paths: ["participacion-ciudadana/**", ".github/workflows/build-participacion.yml"]
+  pull_request:
+    paths: ["participacion-ciudadana/**", ".github/workflows/build-participacion.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: participacion-ciudadana
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build

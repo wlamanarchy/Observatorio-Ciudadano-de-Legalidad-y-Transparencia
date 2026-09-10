@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://colombia-construye-futuro.example/schemas/observatorio-diagnostic.schema.json",
+  "title": "ObservatorioPublicDiagnostic",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["system", "record_id", "title", "source_url", "published_at", "record_hash"],
+  "properties": {
+    "system": {
+      "const": "observatorio-ciudadano-legalidad-transparencia"
+    },
+    "record_id": {"type": "string", "minLength": 1, "maxLength": 200},
+    "title": {"type": "string", "minLength": 1, "maxLength": 500},
+    "summary": {"type": "string", "maxLength": 5000},
+    "territorial_level": {
+      "type": ["string", "null"],
+      "enum": ["nacional", "regional", "departamental", "distrital", "municipal", null]
+    },
+    "region": {"type": ["string", "null"], "maxLength": 150},
+    "department": {"type": ["string", "null"], "maxLength": 150},
+    "municipality": {"type": ["string", "null"], "maxLength": 150},
+    "entity": {"type": ["string", "null"], "maxLength": 500},
+    "classification": {"type": ["string", "null"], "maxLength": 120},
+    "verification": {"type": ["string", "null"], "maxLength": 120},
+    "source_url": {"type": "string", "format": "uri"},
+    "source_urls": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {"type": "string", "format": "uri"},
+      "uniqueItems": true
+    },
+    "source_version": {"type": ["string", "null"], "maxLength": 200},
+    "published_at": {"type": "string", "format": "date-time"},
+    "record_hash": {
+      "type": "string",
+      "pattern": "^(sha256:)?[a-fA-F0-9]{64}$"
+    }
+  }
+}
