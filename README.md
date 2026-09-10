@@ -1,35 +1,52 @@
 # Observatorio Ciudadano de Legalidad y Transparencia
 
-Versión 2.0 — plataforma ciudadana para vigilancia de actuaciones institucionales en Colombia con cobertura **nacional, departamental, distrital, municipal y regional/supraterritorial**.
+Plataforma abierta de **control ciudadano de la gestión pública en Colombia**, con una metodología uniforme de evidencia, contraste jurídico, derecho de réplica, traslado competente, seguimiento y publicación trazable.
 
-El sistema conserva la metodología original: una actuación concreta se contrasta con una norma citada, se verifica con fuente primaria, se garantiza réplica y solo después se publica. También registra actuaciones conformes a derecho.
+El Observatorio es la plataforma hermana de **CONSENSO**. Sus funciones son distintas: el Observatorio documenta y controla actuaciones públicas; CONSENSO puede tomar únicamente información pública del Observatorio como insumo de diagnóstico para construir soluciones, prioridades y visión futura.
 
-## Funciones
+## Cobertura
 
-- Tablero nacional y territorial.
-- Registro filtrable por ámbito, región y departamento.
-- Formulario ciudadano con ubicación territorial.
-- Curaduría humana antes de publicar.
-- Clasificación: defecto jurídico, riesgo de integridad o conforme a derecho.
-- Sellos: documentado, en verificación y sin verificar.
-- Derecho de réplica y registro de traslado/radicado.
-- Boletín semanal país, nacional o territorial.
+El control no se reduce a Nación–departamento–municipio. La interfaz reconoce 25 tipos de ámbito: nacional, regional, RAP, departamental, distrital, municipal, localidad, comuna, corregimiento, vereda, área metropolitana, provincia administrativa y de planificación, subregión PDET, Zona de Reserva Campesina, cuenca/POMCA, institucional y ámbitos de gobierno propio o étnico-territorial.
 
-## Desarrollo
+Esto incluye resguardos y territorios indígenas, comunidades o parcialidades, territorios ancestrales, tierras y territorios colectivos NARP, ámbitos de consejos comunitarios, comunidades raizales y palenqueras y Kumpany del pueblo Rrom. El sistema diferencia **ámbito, autoridad y entidad** y no sustituye consulta previa, gobierno propio ni jurisdicciones especiales.
 
-```bash
-npm install
-npm run dev
-```
+El catálogo de sujetos comprende ramas Ejecutiva, Legislativa y Judicial; organismos de control; organización electoral; órganos autónomos e independientes; entidades descentralizadas; gobiernos territoriales; esquemas asociativos; Sistema General de Regalías; universidades públicas; CAR; instancias de planeación; gobiernos y autoridades étnicas; y otras organizaciones cuando exista una relación jurídicamente verificable con gestión o recursos públicos.
 
-## Producción
+## Cadena de control
 
-```bash
-npm run build
-```
+**Evidencia → Verificación → Contraste jurídico → Réplica → Traslado competente → Seguimiento → Resultado público.**
 
-El repositorio incluye un workflow para GitHub Pages. En **Settings → Pages → Build and deployment**, seleccione **GitHub Actions**.
+Una alerta ciudadana nunca se publica automáticamente como hallazgo. Las fichas pueden clasificarse como **defecto jurídico**, **riesgo de integridad** o **conforme a derecho**. Un riesgo no equivale a responsabilidad penal, disciplinaria o fiscal.
 
-## Advertencia de infraestructura
+## Calidad metodológica
 
-La demo usa `localStorage`; por tanto, los datos quedan en cada navegador y no constituyen una base compartida. Antes de abrir el sistema a reportes reales de todo el país debe conectarse un backend con autenticación, roles territoriales, auditoría y protección de datos. Véase `docs/arquitectura-produccion.md`.
+- fuente primaria para el sello DOCUMENTADO;
+- norma o estándar concreto de contraste;
+- oportunidad de réplica de la entidad observada;
+- competencia verificada antes de un traslado;
+- datos privados del reportante separados del contenido público;
+- roles nacionales y territoriales con Row Level Security;
+- historial de fuentes, réplicas, traslados y eventos de expediente;
+- correcciones visibles y conservación de trazabilidad;
+- mismo estándar sin importar gobierno, partido, entidad o territorio observado;
+- publicación explícita después de superar las garantías metodológicas.
+
+## Infraestructura
+
+Frontend React/Vite publicado con GitHub Pages. Backend Supabase/PostgreSQL independiente de CONSENSO, con autenticación, RLS, auditoría y seguimiento de expedientes.
+
+El repositorio mantiene las migraciones en `supabase/migrations/` y la aplicación pública en `src/`.
+
+## Acceso público
+
+Observatorio:
+
+`https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/`
+
+CONSENSO:
+
+`https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/participacion/`
+
+## Identidad visual
+
+Las dos plataformas usan la misma familia visual: verde bosque y verde institucional como colores principales, dorado como acento, fondos claros y rojo reservado para alertas o acciones críticas. La identidad común muestra que pertenecen al mismo ecosistema ciudadano, manteniendo sus funciones independientes.
