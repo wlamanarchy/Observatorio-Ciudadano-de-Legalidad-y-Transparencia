@@ -37,15 +37,21 @@ Frontend React/Vite publicado con GitHub Pages. Backend Supabase/PostgreSQL inde
 
 El repositorio mantiene las migraciones en `supabase/migrations/` y la aplicación pública en `src/`.
 
-## Acceso público
+## Accesos públicos separados
 
-Observatorio:
+Portal general:
 
 `https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/`
 
+Observatorio Ciudadano de Legalidad y Transparencia:
+
+`https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/observatorio/`
+
 CONSENSO:
 
-`https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/participacion/`
+`https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/consenso/`
+
+La antigua ruta `/participacion/` se conserva únicamente como redirección hacia `/consenso/` para no romper enlaces previos.
 
 ## Identidad visual
 
