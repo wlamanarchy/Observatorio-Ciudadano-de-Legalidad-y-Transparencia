@@ -2,7 +2,7 @@ import { supabase, supabaseEnabled } from './supabase.js';
 
 const demo={
   processes:[{id:'demo-process',title:'Visión Colombia 2050 — piloto',process_type:'vision_largo_plazo',legal_nature:'consultivo',scope_level:'nacional',status:'deliberation'}],
-  proposals:[],diagnostics:[],ballots:[],results:[]
+  proposals:[],diagnostics:[],ballots:[],results:[],entityTypes:[],scopeTypes:[],registries:[],scopes:[]
 };
 
 export const backendMode=()=>supabaseEnabled?'supabase':'demo';
@@ -60,6 +60,22 @@ export async function listDiagnostics(){
 export async function listProposals(){
   if(!supabase)return demo.proposals;
   return unwrap(await supabase.from('public_proposal_feed').select('*').order('created_at',{ascending:false}))||[];
+}
+export async function listEntityCatalog(){
+  if(!supabase)return demo.entityTypes;
+  return unwrap(await supabase.from('public_entity_type_catalog').select('*').order('sort_order',{ascending:true}))||[];
+}
+export async function listScopeTypeCatalog(){
+  if(!supabase)return demo.scopeTypes;
+  return unwrap(await supabase.from('public_scope_type_catalog').select('*').order('sort_order',{ascending:true}))||[];
+}
+export async function listReferenceRegistries(){
+  if(!supabase)return demo.registries;
+  return unwrap(await supabase.from('public_reference_registries').select('*').order('name',{ascending:true}))||[];
+}
+export async function listParticipationScopes(){
+  if(!supabase)return demo.scopes;
+  return unwrap(await supabase.from('public_participation_scopes').select('*').order('name',{ascending:true}))||[];
 }
 export async function listContributions(proposalId){
   if(!supabase)return [];
