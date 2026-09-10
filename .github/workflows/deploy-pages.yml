@@ -30,17 +30,24 @@ jobs:
         run: |
           npm install
           npm run build
+          mkdir -p /tmp/observatorio-pages
+          cp -R dist/. /tmp/observatorio-pages/
 
-      - name: Build Colombia Construye Futuro
+      - name: Build CONSENSO
         working-directory: participacion-ciudadana
         run: |
           npm install
           npm run build
 
-      - name: Add participation app to Pages artifact
+      - name: Assemble separated public routes
         run: |
-          mkdir -p dist/participacion
-          cp -R participacion-ciudadana/dist/. dist/participacion/
+          mkdir -p dist/observatorio dist/consenso dist/participacion
+          cp -R /tmp/observatorio-pages/. dist/observatorio/
+          cp -R participacion-ciudadana/dist/. dist/consenso/
+          cat > dist/participacion/index.html <<'EOF'
+          <!doctype html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../consenso/"><title>CONSENSO</title></head><body><p>CONSENSO ahora está en <a href="../consenso/">/consenso/</a>.</p></body></html>
+          EOF
+          cp pages/portal-index.html dist/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
