@@ -6,7 +6,7 @@ CONSENSO es una infraestructura digital abierta para participación ciudadana, p
 
 ## Relación con el Observatorio
 
-CONSENSO es independiente del **Observatorio Ciudadano de Legalidad y Transparparencia**, pero puede consumir únicamente información pública del Observatorio como insumo de diagnóstico. No comparte contactos privados, credenciales, notas internas ni bases reservadas.
+CONSENSO es independiente del **Observatorio Ciudadano de Legalidad y Transparencia**, pero puede consumir únicamente información pública del Observatorio como insumo de diagnóstico. No comparte contactos privados, credenciales, notas internas ni bases reservadas.
 
 Un diagnóstico verificable puede originar retos y propuestas, pero nunca automatiza una decisión política. La ciudadanía conserva la posibilidad de formular alternativas, deliberar, evaluar, priorizar y votar bajo reglas previamente publicadas.
 
