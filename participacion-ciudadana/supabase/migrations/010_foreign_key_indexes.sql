@@ -1,0 +1,42 @@
+-- Índices de cobertura para claves foráneas y consultas de gobierno/participación.
+-- Requiere 001-009.
+
+create index if not exists ballot_eligibility_user_idx on public.ballot_eligibility(user_id);
+create index if not exists eligibility_requests_user_idx on public.ballot_eligibility_requests(user_id);
+create index if not exists eligibility_requests_decided_by_idx on public.ballot_eligibility_requests(decided_by);
+create index if not exists ballot_options_ballot_idx on public.ballot_options(ballot_id);
+create index if not exists ballot_options_proposal_idx on public.ballot_options(proposal_id);
+create index if not exists ballots_process_idx on public.ballots(process_id);
+create index if not exists consensus_assessments_ballot_idx on public.consensus_assessments(ballot_id);
+create index if not exists consensus_assessments_assessed_by_idx on public.consensus_assessments(assessed_by);
+create index if not exists contributions_created_by_idx on public.contributions(created_by);
+create index if not exists panel_members_user_idx on public.deliberative_panel_members_private(user_id);
+create index if not exists deliberative_panels_process_idx on public.deliberative_panels(process_id);
+create index if not exists diagnostic_sources_imported_by_idx on public.diagnostic_sources(imported_by);
+create index if not exists diagnostics_process_idx on public.diagnostics(process_id);
+create index if not exists diagnostics_created_by_idx on public.diagnostics(created_by);
+create index if not exists governance_roles_assigned_by_idx on public.governance_roles(assigned_by);
+create index if not exists milestones_proposal_idx on public.implementation_milestones(proposal_id);
+create index if not exists responses_institution_idx on public.institutional_responses(institution_id);
+create index if not exists responses_proposal_idx on public.institutional_responses(proposal_id);
+create index if not exists moderation_actions_contribution_idx on public.moderation_actions(contribution_id);
+create index if not exists moderation_actions_moderator_idx on public.moderation_actions(moderator_id);
+create index if not exists moderation_actions_proposal_idx on public.moderation_actions(proposal_id);
+create index if not exists moderation_appeals_action_idx on public.moderation_appeals(moderation_action_id);
+create index if not exists moderation_appeals_appellant_idx on public.moderation_appeals(appellant_id);
+create index if not exists moderation_appeals_decided_by_idx on public.moderation_appeals(decided_by);
+create index if not exists incidents_ballot_idx on public.participation_incidents(ballot_id);
+create index if not exists incidents_opened_by_idx on public.participation_incidents(opened_by);
+create index if not exists incidents_process_idx on public.participation_incidents(process_id);
+create index if not exists incidents_resolved_by_idx on public.participation_incidents(resolved_by);
+create index if not exists processes_created_by_idx on public.participation_processes(created_by);
+create index if not exists processes_institution_idx on public.participation_processes(institution_id);
+create index if not exists rule_snapshots_created_by_idx on public.process_rule_snapshots(created_by);
+create index if not exists proposal_versions_created_by_idx on public.proposal_versions(created_by);
+create index if not exists proposals_created_by_idx on public.proposals(created_by);
+create index if not exists proposals_diagnostic_idx on public.proposals(diagnostic_id);
+create index if not exists proposals_process_idx on public.proposals(process_id);
+create index if not exists evaluations_evaluator_idx on public.technical_evaluations(evaluator_id);
+create index if not exists evaluations_proposal_idx on public.technical_evaluations(proposal_id);
+create index if not exists checkpoints_first_event_idx on public.transparency_checkpoints(first_event_id);
+create index if not exists checkpoints_last_event_idx on public.transparency_checkpoints(last_event_id);
