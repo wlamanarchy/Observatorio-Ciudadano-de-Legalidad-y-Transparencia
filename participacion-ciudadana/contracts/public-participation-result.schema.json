@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://colombia-construye-futuro.example/schemas/public-participation-result.schema.json",
+  "title": "PublicParticipationResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "process_id", "ballot_id", "legal_nature", "method", "closed_at",
+    "participant_count", "rules_hash", "options_hash", "result_hash",
+    "software_commit", "qualification"
+  ],
+  "properties": {
+    "process_id": {"type": "string", "format": "uuid"},
+    "ballot_id": {"type": "string", "format": "uuid"},
+    "legal_nature": {"type": "string", "maxLength": 120},
+    "method": {
+      "type": "string",
+      "enum": ["approval", "ranked", "yes_no", "points100", "participatory_budget"]
+    },
+    "closed_at": {"type": "string", "format": "date-time"},
+    "eligible_count": {"type": ["integer", "null"], "minimum": 0},
+    "participant_count": {"type": "integer", "minimum": 0},
+    "territories_represented": {"type": ["integer", "null"], "minimum": 0},
+    "qualification": {
+      "type": "string",
+      "enum": [
+        "aporte_emergente", "apoyo_relevante", "prioridad_participativa",
+        "prioridad_territorial_amplia", "consenso_amplio", "decision_formal"
+      ]
+    },
+    "results": {"type": "object"},
+    "incidents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "status", "affects_result"],
+        "properties": {
+          "severity": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+          "status": {"type": "string"},
+          "affects_result": {"type": "boolean"},
+          "summary": {"type": "string"}
+        }
+      }
+    },
+    "rules_hash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+    "options_hash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+    "result_hash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+    "receipts_root_hash": {"type": ["string", "null"], "pattern": "^[a-fA-F0-9]{64}$"},
+    "software_commit": {"type": "string", "minLength": 7, "maxLength": 64},
+    "checkpoint_hash": {"type": ["string", "null"]},
+    "anchor_network": {"type": ["string", "null"]},
+    "anchor_reference": {"type": ["string", "null"]},
+    "audit_report_url": {"type": ["string", "null"], "format": "uri"}
+  }
+}
