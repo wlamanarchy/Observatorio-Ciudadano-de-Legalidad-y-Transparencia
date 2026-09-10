@@ -1,97 +1,84 @@
-# Manual operativo v2.0
+# Manual operativo público
 ## Observatorio Ciudadano de Legalidad y Transparencia
-### Cobertura nacional, departamental, distrital, municipal y regional
 
 ## 1. Objeto
 
-El observatorio toma actuaciones concretas de entidades públicas —decretos, resoluciones, contratos, nombramientos, acuerdos, ordenanzas y otros actos identificables— y las contrasta con normas vigentes citadas. Registra el resultado, sea cual sea.
+El Observatorio documenta actuaciones concretas relacionadas con la gestión pública —actos, contratos, convenios, nombramientos, planes, proyectos, omisiones verificables y otras actuaciones identificables— y las contrasta con fuentes y normas aplicables.
 
-No es un tribunal, no declara nulidades ni responsabilidades y no convierte el desacuerdo político en hallazgo jurídico.
+No es tribunal ni organismo sancionador. No declara nulidades, delitos, faltas disciplinarias ni responsabilidad fiscal. Un desacuerdo político no constituye por sí mismo un hallazgo jurídico.
 
-**Regla central:** si no puede señalarse la norma concreta que se considera infringida, no existe un hallazgo jurídico documentado.
+## 2. Cadena metodológica
 
-## 2. Cobertura territorial
+**Evidencia → Verificación → Contraste jurídico → Réplica → Traslado competente → Seguimiento → Resultado público.**
 
-Cada ficha debe indicar uno de estos niveles: **nacional, departamental, distrital, municipal o regional/supraterritorial**. Para las fichas no nacionales se registran, cuando correspondan, región, departamento, municipio/distrito y territorio o jurisdicción especial.
+Un reporte ciudadano inicia una verificación. No entra automáticamente al registro público.
 
-La metodología no cambia entre territorios. Cambian la fuente oficial, la autoridad competente y la jurisdicción del control judicial.
+## 3. Cobertura
 
-## 3. Clases de ficha
+La plataforma distingue 25 tipos de ámbito de control: nacional; regional; RAP; departamental; distrital; municipal; localidad; comuna; corregimiento; vereda; área metropolitana; provincia administrativa y de planificación; subregión PDET; Zona de Reserva Campesina; cuenca o unidad hidrográfica/POMCA; institucional; resguardo indígena; territorio indígena; comunidad o parcialidad indígena; territorio ancestral o tradicional indígena; tierra o territorio colectivo NARP; ámbito de consejo comunitario NARP; territorio o comunidad raizal; territorio o comunidad palenquera; y Kumpania del pueblo Rrom.
 
-### Defecto jurídico
-Una actuación que se considera apartada de una norma superior. La causal debe anclarse, cuando corresponda, al catálogo del artículo 137 del CPACA: infracción de norma superior, falta de competencia, expedición irregular, desconocimiento del derecho de audiencia y defensa, falsa motivación o desviación de poder. También puede registrarse el exceso de potestad reglamentaria cuando sea pertinente.
+La base conserva además un nivel amplio —nacional, departamental, distrital, municipal o regional— para el enrutamiento de roles, mientras el expediente mantiene el ámbito detallado.
 
-### Riesgo de integridad
-Es un indicador objetivo que obliga a verificar. No es una imputación penal. Ejemplos: contratación directa sin justificación suficiente, adición contractual que exige revisión, conflicto de interés no declarado, nombramiento sin requisitos o negativa injustificada de información pública.
+## 4. Ámbito, autoridad y entidad
 
-### Conforme a derecho
-Actuaciones revisadas que resultaron ajustadas. Esta categoría es indispensable para que el observatorio mida y no se convierta en propaganda.
+La plataforma no confunde territorio con autoridad. Un resguardo puede ser ámbito de control mientras un cabildo, autoridad tradicional o consejo indígena constituye autoridad de gobierno propio. Una tierra o territorio colectivo NARP se diferencia del consejo comunitario que la representa o administra. La Kumpania Rrom se trata conforme a su régimen propio.
 
-## 4. Ciclo semanal
+El control ciudadano digital no sustituye consulta previa, gobierno propio, jurisdicción especial ni procedimientos constitucionales o legales obligatorios.
 
-**Lunes:** barrido de fuentes nacionales y territoriales.  
-**Martes y miércoles:** verificación documental y contraste normativo.  
-**Jueves:** derecho de réplica y derechos de petición necesarios.  
-**Viernes:** curaduría, cierre y boletín.
+## 5. Sujetos y entidades
 
-Una semana sin hallazgos publicables se informa igualmente.
+El catálogo cubre ramas Ejecutiva, Legislativa y Judicial; organismos de control; organización electoral; órganos autónomos e independientes; entidades descentralizadas; gobernaciones y alcaldías; CAR; universidades estatales u oficiales y entes universitarios autónomos; esquemas asociativos territoriales; Sistema General de Regalías; instancias de planeación y participación; y autoridades u organizaciones de gobierno propio cuando exista una relación verificable con gestión, competencias o recursos públicos.
 
-## 5. Fuentes
+## 6. Clases de ficha
 
-Para el orden nacional se priorizan Diario Oficial, SECOP II, portales de transparencia, sitios oficiales, sentencias y radicados.
+**Defecto jurídico:** posible incompatibilidad con una norma superior o regla jurídica concreta. Debe citarse la norma y explicarse el contraste.
 
-Para el orden territorial se agregan gacetas o diarios oficiales departamentales, distritales y municipales, ordenanzas, acuerdos, decretos territoriales, resoluciones y portales oficiales de gobernaciones, alcaldías, concejos, asambleas, entidades descentralizadas, CAR y áreas metropolitanas.
+**Riesgo de integridad:** indicador objetivo que amerita verificación. No es una imputación penal, disciplinaria o fiscal.
 
-Una nota de prensa puede servir como indicio para localizar el acto, pero no sustituye la fuente primaria.
+**Conforme a derecho:** actuación revisada que, bajo el contraste realizado y la evidencia disponible, no presenta hallazgo. Esta categoría es necesaria para preservar imparcialidad.
 
-## 6. Sellos de verificación
+## 7. Fuentes y sello DOCUMENTADO
 
-- **DOCUMENTADO:** se abrió la fuente primaria y el hecho está respaldado por ella. Es el sello que habilita publicación.
-- **EN VERIFICACIÓN:** el hecho es plausible, pero falta soporte o respuesta oficial.
-- **SIN VERIFICAR:** reporte recibido que todavía no ha pasado por curaduría documental.
+La fuente primaria es el estándar de publicación. Se priorizan Diario Oficial, SECOP, portales de transparencia, gacetas, actos oficiales, expedientes, sentencias, radicados, bases oficiales y documentos originales de la entidad competente.
 
-## 7. Derecho de réplica
+La prensa y las redes pueden originar una alerta, pero no sustituyen la fuente primaria.
 
-Toda observación debe notificarse a la entidad antes de publicarse. La comunicación identifica el acto, describe el hecho verificable, cita la norma de contraste y solicita pronunciamiento. La respuesta institucional debe incorporarse a la ficha.
+- **DOCUMENTADO:** soporte primario abierto y verificado por curaduría.
+- **EN VERIFICACIÓN:** existe plausibilidad o evidencia parcial, pero faltan comprobaciones.
+- **SIN VERIFICAR:** reporte recibido pendiente de curaduría.
 
-## 8. Traslado a autoridad competente
+## 8. Derecho de réplica
 
-En asuntos nacionales pueden intervenir, según la materia y el sujeto, Fiscalía, Procuraduría, Contraloría General, Consejo de Estado, Corte Constitucional u otras autoridades con competencia especial.
+Antes de una publicación adversa definitiva, la entidad o autoridad observada debe tener oportunidad razonable de responder. La réplica identifica el hecho, acto o actuación, el soporte y la norma de contraste. La respuesta se incorpora al expediente.
 
-En asuntos territoriales deben considerarse Fiscalía, Procuraduría o Personería, contraloría territorial o Contraloría General según competencia y origen de los recursos, y la jurisdicción contencioso-administrativa territorialmente competente.
+Cuando la réplica no sea jurídicamente o materialmente aplicable, esa decisión debe motivarse; no basta omitirla.
 
-La selección automática de la plataforma es una ayuda de enrutamiento y debe ser confirmada jurídicamente antes de radicar.
+## 9. Rutas de control
 
-## 9. Pantallas
+El Observatorio puede orientar, según el caso, derechos de petición, acceso a información pública, control fiscal, actuación disciplinaria o preventiva, investigación penal, protección de derechos humanos, control político, jurisdicción contencioso-administrativa, acciones constitucionales o colectivas y salvaguardas de consulta previa/gobierno propio.
 
-**Tablero:** balance de fichas y cobertura nacional/territorial.  
-**Registro:** fichas filtrables por ámbito, región y departamento.  
-**Reportar:** formulario ciudadano con identificación territorial, acto, soporte y declaración de veracidad.  
-**Curaduría:** revisión humana previa.  
-**Boletín:** salida semanal país, nacional o territorial/regional.  
-**Metodología:** reglas públicas del instrumento.
+La plataforma nunca presume competencia: antes de radicar debe confirmarse sujeto, materia, territorio, origen de los recursos y norma especial.
 
-## 10. Correcciones
+## 10. Expediente y trazabilidad
 
-Una ficha errada se corrige de forma visible, se fecha la corrección y se notifica a la entidad afectada. No se borra el historial.
+Cada ficha puede conservar fuentes, réplicas, traslados, vencimientos y eventos. Los datos privados del reportante se almacenan separados del contenido público. Las correcciones deben quedar visibles y fechadas.
 
-## 11. Gobernanza nacional
+## 11. Roles
 
-Se recomienda un equipo central que administre metodología, catálogos, revisión jurídica y boletín país, acompañado de nodos regionales que hagan barrido de fuentes, verificación inicial y radicación territorial.
+La arquitectura contempla administración y curaduría nacional, coordinación regional, curaduría territorial y lectores internos/territoriales. La base aplica Row Level Security para limitar el acceso según rol y ámbito.
 
-Un nodo regional puede proponer una ficha, pero la publicación debe conservar el mismo estándar documental que una ficha nacional.
+## 12. Regla de publicación
 
-## 12. Puesta en marcha
+La publicación es una decisión explícita de curaduría. No debe derivarse automáticamente de un cambio de estado. Como mínimo deben verificarse: fuente primaria, sello DOCUMENTADO y réplica respondida o motivadamente no aplicable.
 
-1. Formalizar la veeduría conforme a la Ley 850 de 2003.
-2. Publicar la metodología antes del primer hallazgo.
-3. Definir entidades y sectores priorizados.
-4. Crear una matriz de fuentes oficiales por departamento y región.
-5. Designar responsables territoriales.
-6. Mantener un canal separado para fuentes sensibles.
-7. Conectar un backend seguro antes de abrir recepción nacional de reportes.
-8. Fijar una cadencia de publicación estable.
+## 13. Boletín
 
-## Marco normativo base
+El boletín consume únicamente fichas expresamente publicadas. Debe permitir lectura país y territorial, mostrar también actuaciones conformes a derecho y comunicar cuando no existan hallazgos publicables.
 
-Constitución Política, art. 270; Ley 850 de 2003; Ley 1712 de 2014; Ley 1755 de 2015; Ley 1437 de 2011 (CPACA); Ley 80 de 1993; Ley 1150 de 2007; Ley 1474 de 2011; Ley 2195 de 2022; Ley 2013 de 2019; Ley 1581 de 2012.
+## 14. Relación con CONSENSO
+
+El Observatorio y CONSENSO son plataformas hermanas pero separadas. El Observatorio puede producir evidencia pública útil como diagnóstico. CONSENSO puede usar esa información para abrir procesos de solución, deliberación y priorización, sin convertir automáticamente un hallazgo en una propuesta o decisión.
+
+## 15. Marco base
+
+Constitución Política, especialmente arts. 23, 40, 74 y 270; Ley 850 de 2003; Ley 1712 de 2014; Ley 1755 de 2015; Ley 1437 de 2011; Ley 80 de 1993; Ley 1150 de 2007; Ley 1474 de 2011; Ley 2195 de 2022; Ley 2013 de 2019; Ley 1581 de 2012; y normas especiales aplicables según entidad, territorio, materia, gobierno propio o régimen diferencial.
