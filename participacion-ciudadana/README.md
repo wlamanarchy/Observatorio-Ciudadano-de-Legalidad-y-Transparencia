@@ -6,7 +6,7 @@ CONSENSO es una infraestructura digital abierta para participación ciudadana, p
 
 ## Relación con el Observatorio
 
-CONSENSO es independiente del **Observatorio Ciudadano de Legalidad y Transparencia**, pero puede consumir únicamente información pública del Observatorio como insumo de diagnóstico. No comparte contactos privados, credenciales, notas internas ni bases reservadas.
+CONSENSO es independiente del **Observatorio Ciudadano de Legalidad y Transparparencia**, pero puede consumir únicamente información pública del Observatorio como insumo de diagnóstico. No comparte contactos privados, credenciales, notas internas ni bases reservadas.
 
 Un diagnóstico verificable puede originar retos y propuestas, pero nunca automatiza una decisión política. La ciudadanía conserva la posibilidad de formular alternativas, deliberar, evaluar, priorizar y votar bajo reglas previamente publicadas.
 
@@ -72,8 +72,10 @@ npm run dev
 npm run build
 ```
 
-GitHub Actions valida y publica la aplicación en el artefacto de GitHub Pages bajo `/participacion/` mientras se mantiene la interoperabilidad con el Observatorio.
+GitHub Actions valida y publica CONSENSO bajo una ruta pública propia, separada del Observatorio.
 
 ## Acceso público
 
-`https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/participacion/`
+`https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/consenso/`
+
+La ruta antigua `/participacion/` redirige a esta dirección.
