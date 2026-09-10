@@ -1,18 +1,42 @@
-# Colombia Construye Futuro
+# CONSENSO
 
-Infraestructura digital abierta para participación ciudadana, planeación de largo plazo, co-creación normativa, construcción de planes de desarrollo, estrategias, alianzas, priorización democrática y seguimiento de compromisos públicos en Colombia.
+**Construcción ciudadana del país que todavía no existe.**
 
-> Nombre provisional de producto. La arquitectura y los estándares se diseñan para poder adoptar posteriormente un nombre institucional definitivo sin alterar el modelo técnico.
+CONSENSO es una infraestructura digital abierta para participación ciudadana, planeación de largo plazo, co-creación normativa, construcción de planes de desarrollo y de gobierno propio, estrategias, alianzas, priorización democrática y seguimiento de compromisos públicos en Colombia.
 
 ## Relación con el Observatorio
 
-Esta plataforma es independiente del **Observatorio Ciudadano de Legalidad y Transparencia**, pero puede consumir únicamente información pública del Observatorio como insumo de diagnóstico. No comparte contactos privados, credenciales, notas internas ni bases reservadas.
+CONSENSO es independiente del **Observatorio Ciudadano de Legalidad y Transparencia**, pero puede consumir únicamente información pública del Observatorio como insumo de diagnóstico. No comparte contactos privados, credenciales, notas internas ni bases reservadas.
 
 Un diagnóstico verificable puede originar retos y propuestas, pero nunca automatiza una decisión política. La ciudadanía conserva la posibilidad de formular alternativas, deliberar, evaluar, priorizar y votar bajo reglas previamente publicadas.
+
+## Del país al resguardo
+
+La plataforma no reduce Colombia a Nación–departamento–municipio. El modelo distingue:
+
+- **ámbito o territorio** donde ocurre el proceso;
+- **entidad, órgano, autoridad o instancia** que tiene competencia;
+- **instrumento jurídico o de planeación** donde puede aterrizar la decisión.
+
+Esto permite trabajar con Nación, regiones, RAP, departamentos, distritos, municipios, localidades, comunas, corregimientos, veredas, áreas metropolitanas, provincias administrativas y de planificación, subregiones PDET, zonas de reserva campesina, cuencas de planificación, instituciones públicas y ámbitos étnico-territoriales.
+
+Entre los ámbitos y gobiernos propios se incluyen, con verificación en registros oficiales cuando corresponda: **resguardos indígenas, territorios indígenas, comunidades o parcialidades, territorios ancestrales o tradicionales, cabildos, autoridades tradicionales, consejos indígenas, asociaciones de cabildos/autoridades, asociaciones de resguardos, consejos territoriales indígenas, consejos comunitarios NARP, tierras y territorios colectivos, organizaciones NARP, comunidades raizales y palenqueras, Kumpany y organizaciones del pueblo Rrom**.
+
+Un resguardo puede ser simultáneamente una institución legal/sociopolítica y un ámbito territorial; por eso CONSENSO registra por separado la autoridad concreta que lo gobierna. Del mismo modo, el territorio colectivo NARP se distingue del consejo comunitario que lo administra y representa. La participación digital no sustituye la consulta previa ni otros procedimientos especiales obligatorios.
+
+## Catálogo institucional
+
+El catálogo cubre las ramas Ejecutiva, Legislativa y Judicial; organismos de control; organización electoral; órganos autónomos e independientes; entidades descentralizadas; esquemas asociativos territoriales; Sistema General de Regalías; instancias de planeación participativa; organizaciones de acción comunal y control social; autoridades y gobiernos colectivos étnicos.
+
+La clasificación pública incluye para cada tipo: familia, rama o sistema, nivel de gobierno, naturaleza de su papel, resumen de competencia, instrumentos típicos, base normativa de referencia y fuente oficial.
+
+Las fuentes maestras registradas en el backend incluyen el Manual de Estructura del Estado de Función Pública, DIVIPOLA del DANE, registros de pueblos y autoridades étnicas del Ministerio del Interior, información territorial de la Agencia Nacional de Tierras y referencias metodológicas de planeación participativa del DNP.
 
 ## Principios de legitimidad
 
 - igualdad política: profesión, cargo, patrimonio o experticia no multiplican el voto;
+- pluralismo territorial, institucional y étnico;
+- competencia antes de promesa: cada acuerdo se dirige a quien jurídicamente puede decidirlo;
 - reglas de votación definidas, publicadas y congeladas antes de abrir cada proceso;
 - resultados consultivos salvo integración formal con un mecanismo jurídicamente competente;
 - trazabilidad de versiones, moderación, evidencia, decisiones y respuestas institucionales;
@@ -22,35 +46,18 @@ Un diagnóstico verificable puede originar retos y propuestas, pero nunca automa
 - accesibilidad WCAG 2.1 AA como mínimo;
 - participación multicanal y medidas contra exclusión digital;
 - auditoría de agregados y operaciones críticas;
-- registro criptográfico append-only y anclaje blockchain opcional solo de hashes.
+- registro criptográfico append-only y anclaje blockchain opcional solo de hashes;
+- respeto por consulta previa, gobierno propio y representación válida de pueblos y comunidades étnicas.
 
 ## Aplicación
 
-El frontend React/Vite ya incorpora:
-
-- lectura pública de procesos, diagnósticos y propuestas;
-- autenticación passwordless por correo cuando Supabase está configurado;
-- creación de propuestas asociadas a procesos públicos;
-- deliberación con argumentos a favor/en contra, alternativas, preguntas, enmiendas y evidencia;
-- directorio de votaciones publicadas;
-- solicitud de habilitación para votar;
-- emisión de voto mediante RPC para métodos habilitados;
-- recibo de integridad sin publicar selección individual;
-- vínculo público con el Observatorio como fuente hermana de diagnóstico;
-- modo demostración cuando todavía no existe backend propio.
+El frontend React/Vite incorpora lectura pública de procesos, diagnósticos, propuestas, ámbitos y catálogos institucionales; autenticación passwordless; creación de propuestas; deliberación; votaciones y priorización; solicitud de habilitación; resultados agregados; recibos de integridad; administración de roles y procesos; y vínculo público con el Observatorio como plataforma hermana de diagnóstico.
 
 ## Backend
 
-Las migraciones en `supabase/migrations` separan:
+El backend Supabase/PostgreSQL es independiente del Observatorio. Sus migraciones implementan núcleo de participación, RLS, votación, procedencia, integridad, consenso, gobernanza, moderación, privacidad, runtime del piloto, administración, ciclo completo de votaciones y el catálogo de entidades/autoridades/ámbitos de CONSENSO.
 
-1. núcleo de participación;
-2. RLS y votación;
-3. procedencia, integridad y consenso;
-4. gobernanza, moderación y validación de selecciones;
-5. vistas seguras y endurecimiento de privacidad;
-6. runtime del piloto: onboarding de ciudadanía, creación segura de propuestas/aportes y solicitudes de elegibilidad.
-
-Para producción debe utilizarse un proyecto Supabase propio, separado del Observatorio, con ambientes diferenciados y auditoría de RLS.
+La migración `015_consenso_entity_and_scope_catalog.sql` incorpora el modelo ampliado de Estado, participación y gobierno propio.
 
 ## Desarrollo
 
@@ -65,12 +72,8 @@ npm run dev
 npm run build
 ```
 
-El proyecto se valida mediante GitHub Actions. En el monorepo actual, el workflow principal construye el Observatorio y añade esta aplicación al artefacto de GitHub Pages bajo `/participacion/`.
+GitHub Actions valida y publica la aplicación en el artefacto de GitHub Pages bajo `/participacion/` mientras se mantiene la interoperabilidad con el Observatorio.
 
-## Despliegue transitorio
-
-Mientras se crea el repositorio independiente, el sitio puede publicarse en:
+## Acceso público
 
 `https://wlamanarchy.github.io/Observatorio-Ciudadano-de-Legalidad-y-Transparencia/participacion/`
-
-La separación definitiva recomendada es: repositorio GitHub propio + proyecto Supabase propio + interoperabilidad pública documentada con el Observatorio.
